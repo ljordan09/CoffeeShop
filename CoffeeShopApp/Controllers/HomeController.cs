@@ -19,18 +19,20 @@ namespace CoffeeShopApp.Controllers
 
         public ActionResult Register()
         {
-            ViewBag.Message = "Please fill in the form to register:";
+            ViewBag.Message = "Please fill in the form:";
 
             return View();
         }
 
         public ActionResult DisplayName(SignUps NewSignUp)
         {
+
             ViewBag.Name = NewSignUp.FirstName;
             return View();
         }
 
-        
+       
+
 
     }
 }
